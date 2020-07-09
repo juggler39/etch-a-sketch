@@ -1,26 +1,139 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 800px;
     background-color: DodgerBlue;
+    font: small-caps bold 24px/1 sans-serif;
   }
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: 12px outset blue;
+  border-radius: 12px;
+  margin-right: 10px;
+
+}
+
+#header {
+  display: flex;
+  width: 640px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  border: 12px outset blue;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
 
 #flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     width: 640px;
     height: 640px;
-    background-color: gray;
+    border: 12px outset blue;
+    border-radius: 12px;
+    background-color: black;
   }
 
 #flex-container > div {
-    background-color: #f1f1f1;
-    width: 39px;
-    height: 39px;
-    margin-left: 1px;
-    margin-bottom: 1px;
-    text-align: center;
-    font-size: 30px;
+    background-color: white;
+    opacity: 1;
+    outline: rgba(30, 144, 255, .1) dotted 1px;
   }
+
+h1 {
+  font-size: 40px;
+  margin: 5px
+}
+
+h2 {
+  font-size: 30px;
+  margin: 5px
+}
+
+#bord-size {
+  width: 70px;
+  font-size: 24px;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px 15px;
+  width: 170px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  outline: none;
+  color: white;
+  background-color: DodgerBlue;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 9px #999;
+}
+
+.color {
+  font-weight: bold;
+}
+
+.button:hover {
+  opacity: .7;
+}
+
+.button:active {
+  background-color: #27e;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.selected {
+  background-color: #27e;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#black {
+  background: black;
+}
+
+#white {
+  background: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+#red {
+  background: red;
+  }
+#green {
+  background: green;
+}
+#blue {
+  background: blue;
+}
+#grayscale {
+  background-image: linear-gradient(to right, black, white);
+}
+
+#unicorn {
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+#random {
+  background-image: linear-gradient(to right, red 10%, blue 11%, blue 20%, yellow 21%,  yellow 30%, black 31%, black 40%,
+  orange 41%, orange 50%, white 51%, white 60%, green 61%, green 70%, pink 71%, pink 80%, brown 81%, brown 90%,
+gray 91%, gray 100%
+  );
+}
