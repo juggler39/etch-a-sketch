@@ -90,7 +90,11 @@ h2 {
 }
 
 .button:hover {
-  opacity: .7;
+  opacity: 0.6;
+}
+
+.button:focus {
+  outline: 1px dotted dodgerblue;
 }
 
 .button:active {
@@ -132,8 +136,8 @@ h2 {
 }
 
 #random {
-  background-image: linear-gradient(to right, red 10%, blue 11%, blue 20%, yellow 21%,  yellow 30%, black 31%, black 40%,
-  orange 41%, orange 50%, white 51%, white 60%, green 61%, green 70%, pink 71%, pink 80%, brown 81%, brown 90%,
-gray 91%, gray 100%
+  background-image: linear-gradient(to right, Lime 10%, blue 11%, blue 20%, yellow 21%,  yellow 30%, DeepPink 31%, DeepPink 40%,
+  orange 41%, orange 50%, DarkViolet 51%, DarkViolet 60%, LightSeaGreen 61%, LightSeaGreen 70%, GreenYellow 71%, GreenYellow 80%,
+  Fuchsia 81%, Fuchsia 90%, Aqua 91%, Aqua 100%
   );
 }

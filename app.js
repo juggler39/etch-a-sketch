@@ -2,7 +2,7 @@ const boardDimension = 640;
 const colorButtons = document.querySelectorAll('.color');
 const board = document.querySelector('#flex-container');
 color = 'black';
-let uni = Math.floor (255*255*255*Math.random());
+let uni = Math.floor (256*256*256*Math.random());
 createGrid (16);
 
 colorButtons.forEach((button) => {
@@ -55,13 +55,11 @@ function draw () {
             uni++;
             break;
         case 'random':
-            let rand = Math.floor (255*255*255*Math.random());
+            let rand = Math.floor (256*256*256*Math.random());
             this.style.backgroundColor = `hsl(${rand}, 100%, 50%)`;
             break;
-        default: this.style.backgroundColor = color;
-
+        default: 
+            this.style.backgroundColor = color;
+            this.style.opacity = 1;
     }
-
-
-
 }
