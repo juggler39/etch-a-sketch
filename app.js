@@ -74,4 +74,5 @@ function draw() {
       this.style.backgroundColor = color;
       this.style.opacity = 1;
   }
+
 }
